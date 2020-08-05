@@ -25,9 +25,10 @@ body {
   color: #ffffff;
   z-index: 1;
 }
-.header a{
+
+.header a {
   display: block;
-  float:left;
+  float: left;
   font-size: 2rem;
   color: #ffffff;
   text-decoration: none;
@@ -37,15 +38,15 @@ body {
   vertical-align: middle;
 }
 
-.header a:hover{
+.header a:hover {
   background-color: rgba(255, 255, 255, 0.7);
 }
 
-.header .menu{
+.header .menu {
   float: right;
 }
 
-.header .title{
+.header .title {
   float: left;
 }
 
@@ -77,7 +78,7 @@ body {
 
 .site-description {
   margin-bottom: 110px;
-  color: #888;
+  color: #fff;
   font-size: 1.6rem;
 }
 
@@ -131,30 +132,80 @@ body {
   line-height: 2.5;
 }
 
-.works {
-  /*background-color: #383634;*/
+.prog{
+    padding: 80px 30px;
+}
+
+.prog-wrapper {
+  width: 80%;
+  display: flex;
+  justify-content: space-around;
+  margin: auto;
+  text-align: left;
+}
+
+.prog-1 {
+  width: 40%;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+}
+
+.prog-heading{
+  text-align: center;
+}
+
+.prog-1 ul {
+  list-style: none;
+  padding: 0;
+}
+
+.prog-1 li {
+  padding: 5px 0;
+}
+
+.prog-heading {
+  font-size: 2rem;
+}
+
+.prog-2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.prog-3 {
+  display: block;
+}
+
+.prog-list{
+  text-align: center;
+}
+
+
+.travels {
   padding: 80px 0;
 }
 
-.works-wrapper {
+.travels-wrapper {
   display: table;
   width: 100%;
   margin-top: 60px;
   table-layout: fixed;
 }
 
-.work-box {
+.travel-box {
   position: relative;
   display: table-cell;
 }
 
-.work-image {
+.travel-image {
   display: block;
   width: 100%;
   margin: 0 0 66.6666%;
 }
 
-.work-box::after {
+.travel-box::after {
   content: "";
   position: absolute;
   top: 50%;
@@ -167,32 +218,32 @@ body {
   transform: scaleY(-1);
 }
 
-.work-box.australia::after {
+.travel-box.australia::after {
   background-image: url("../images/m-au.jpeg");
 }
 
-.work-box.italy::after {
+.travel-box.italy::after {
   background-image: url("../images/m-it.jpeg");
 }
 
-.work-box.greece::after {
+.travel-box.greece::after {
   background-image: url("../images/m-gr.jpeg");
 }
 
-.work-box.egypt::after {
+.travel-box.egypt::after {
   background-image: url("../images/m-eg.jpeg");
 }
 
-.work-box:nth-child(2n+1) .work-image {
+.travel-box:nth-child(2n+1) .travel-image {
   margin: 60% 0 0;
 }
 
-.work-box:nth-child(2n+1) .work-description,
-.work-box:nth-child(2n+1)::after {
+.travel-box:nth-child(2n+1) .travel-description,
+.travel-box:nth-child(2n+1)::after {
   top: 0;
 }
 
-.work-description {
+.travel-description {
   position: absolute;
   top: 50%;
   left: 0;
@@ -202,21 +253,21 @@ body {
   overflow-y: auto;
 }
 
-.work-description-inner {
+.travel-description-inner {
   display: table;
   width: 100%;
   height: 100%;
   padding: 20px;
 }
 
-.work-text {
+.travel-text {
   display: table-cell;
   vertical-align: middle;
   font-size: 1.2rem;
   line-height: 2;
 }
 
-.work-text .button {
+.travel-text .button {
   width: 60%;
   margin-top: 20px;
   padding: 3px;
@@ -227,89 +278,47 @@ body {
   background-color: rgba(255, 255, 255, 0.15);
 }
 
-.skills {
+.certifications {
   padding: 80px 0;
   background-color: #fff;
   color: #333;
 }
 
-.skills-wrapper {
+.certifications-wrapper {
   display: table;
   width: 80%;
   margin: 50px auto 0;
   table-layout: fixed;
 }
 
-.skill-box {
+.certification-box {
   display: table-cell;
 }
 
-.skill-icon {
+.certification-icon {
   width: 150px;
   height: 150px;
   margin-bottom: 30px;
   border: 4px solid;
   border-radius: 50%;
-  color: #f1b400;
+  color: #888;
   font-size: 8rem;
   line-height: 142px;
 }
 
-.skill-title {
+.certification-title {
   margin: 0 20px 20px;
   font-size: 2rem;
 }
 
-.skill-text {
+.certification-text {
   margin: 0 20px;
   line-height: 2;
 }
 
 .contact {
+  height: auto;
   padding: 80px 0 150px;
-}
-
-.contact-form {
-  width: 50%;
-  margin: 50px auto 0;
-}
-
-.contact-form input[type=text],
-.contact-form textarea {
-  display: block;
-  width: 100%;
-  margin-bottom: 10px;
-  padding: 15px;
-  outline: none;
-  border: 1px solid rgba(255, 255, 255, 0.4);
-  border-radius: 0;
-  background-color: rgba(255, 255, 255, 0.2);
-  color: #fff;
-}
-
-.contact-form input[type=text]:focus,
-.contact-form textarea:focus {
-  box-shadow: 0 0 8px rgba(255, 255, 255, 0.5) inset;
-}
-
-.contact-form textarea {
-  height: 150px;
-}
-
-.contact-form input[type=submit] {
-  display: block;
-  width: 200px;
-  margin: 40px auto 0;
-  padding: 15px;
-  border: 1px solid rgba(255, 255, 255, 0.4);
-  border-radius: 5px;
-  background-color: transparent;
-  color: rgba(255, 255, 255, 0.6);
-  cursor: pointer;
-}
-
-.contact-form input[type=submit]:hover {
-  background-color: rgba(255, 255, 255, 0.05);
 }
 
 .footer {
@@ -327,46 +336,13 @@ body {
   body {
     font-size: 1.3rem;
   }
-  .header a{
+
+  .header a {
     font-size: 1.4rem;
     margin: auto 2px;
     padding: 2px 3px;
     line-height: 30px;
   }
-
-/*
-.header {
-  display: block;
-  position: fixed;
-  width: 100%;
-  background-color: rgba(0, 0, 0, 0.7);
-  color: #ffffff;
-  z-index: 1;
-}
-.header a{
-  display: block;
-  float:left;
-  font-size: 2rem;
-  color: #ffffff;
-  text-decoration: none;
-  margin: auto 10px;
-  padding: 5px 5px;
-  line-height: 50px;
-  vertical-align: middle;
-}
-
-.header a:hover{
-  background-color: rgba(255, 255, 255, 0.7);
-}
-
-.header .menu{
-  float: right;
-}
-
-.header .title{
-  float: left;
-}
-  */
 
   .heading {
     margin-top: 20px;
@@ -409,43 +385,51 @@ body {
     line-height: 1.8;
   }
 
-  .works-wrapper,
-  .work-box {
+  .prog-wrapper{
+    flex-direction: column;
+  }
+
+  .prog-1{
+        width: 100%;
+  }
+
+  .travels-wrapper,
+  .travel-box {
     display: block;
   }
 
-  .work-image {
+  .travel-image {
     display: none;
   }
 
-  .work-description {
+  .travel-description {
     position: relative;
   }
 
-  .work-box::after {
+  .travel-box::after {
     top: 0;
     height: 100%;
     background-size: cover;
     transform: none;
   }
 
-  .skills-wrapper,
-  .skill-box {
+  .certifications-wrapper,
+  .certification-box {
     display: block;
   }
 
-  .skill-icon {
+  .certification-icon {
     width: 100px;
     height: 100px;
     font-size: 5rem;
     line-height: 92px;
   }
 
-  .skill-box {
+  .certification-box {
     margin: 40px auto;
   }
 
-  .skill-text {
+  .certification-text {
     margin: 0;
   }
 
@@ -455,5 +439,9 @@ body {
 
   .contact {
     padding-bottom: 80px;
+  }
+
+  .iframe{
+    width: 10px;
   }
 }

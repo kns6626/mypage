@@ -13,12 +13,14 @@
 
 <body>
   <header class="header">
-    <a class="title">KONI's Portfolio</a>
+    <a class="title" href="#">KONI's Portfolio</a>
     <div class="menu">
-    <a class="profile" href="#">Profile</a>
-    <a class="profile" href="#">Travel</a>
-    <a class="profile" href="#">Website Gallery</a>
-  </div>
+      <a class="profile" href="./maintenance/maintenance.html">Profile</a>
+      <a class="profile" href="./maintenance/maintenance.html">Programming</a>
+      <a class="profile" href="./maintenance/maintenance.html">Certification</a>
+      <a class="profile" href="./travel/travel.html">Travel</a>
+      <a class="profile" href="./maintenance/maintenance.html">Contact</a>
+    </div>
   </header>
   <div class="page-title">
     <p class="site-title-sub">KONI's Portfolio</p>
@@ -26,21 +28,118 @@
     <p class="site-description">〜なんか良い感じのタイトルください〜</p>
   </div>
   <section class="about" id="about">
-    <h2 class="heading">ABOUT ME</h2>
+    <h2 class="heading">Profile</h2>
     <p class="about-text">オーストラリア旅行でキャリーバックがなくなり</p>
     <p class="about-text">カンボジア旅行(1回目)で麻薬探知犬に吠えられ</p>
     <p class="about-text">カンボジア旅行(2回目)で食中毒にかかり</p>
     <p class="about-text">エジプト旅行で空港内をたらい回しにされた</p>
     <p class="about-text">新人社会人</p>
   </section>
-  <section class="works">
-    <h2 class="heading">MEMORIES</h2>
-    <div class="works-wrapper">
-      <div class="work-box australia">
-        <img class="work-image" src="images/m-au.jpeg" alt="制作事例1">
-        <div class="work-description">
-          <div class="work-description-inner">
-            <p class="work-text">
+
+  <section class="prog">
+    <h2 class="heading">Programming</h2>
+    <!--
+    <p class="prog"-text"></i>大学の授業(HTML&Javascriptを2コマ(6時間)程度)</p>
+    <p class="prog"-text"></i>大学院の研究(Fortran)</p>
+    -->
+    <div class="prog-wrapper">
+      <div class="prog-1">
+        <p class="prog-heading">社内研修</p>
+        <div class="prog-2">
+          <div class="prog-3">
+            <ul>
+              <li>C</li>
+              <li>Java</li>
+              <li>HTML</li>
+              <li>CSS</li>
+            </ul>
+          </div>
+          <div class="prog-3">
+            <ul>
+              <li>Javascript</li>
+              <li>SQL</li>
+            </ul>
+          </div>
+        </div>
+        <p class="prog-heading">Progate</p>
+        <div class="prog-2">
+          <div class="prog-3">
+            <p class="progate-heading"><i class="fa fa-check-square-o" aria-hidden="true"></i>学習済み</p>
+            <ul>
+              <li>HTML & CSS</li>
+              <li>JavaScript</li>
+              <li>Ruby</li>
+              <li>CommandLine</li>
+              <li>Git</li>
+            </ul>
+          </div>
+          <div class="prog-3">
+            <p class="progate-heading"><i class="fa fa-square-o" aria-hidden="true"></i>学習中</p>
+            <ul>
+              <li>Ruby on Rails</li>
+              <li>PHP</li>
+              <li>SQL</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="prog-1">
+        <p class="prog-heading">書籍</p>
+        <ul class="prog-list">
+          <li>HTML5/CSS3 モダンコーディング <br>(翔泳社)</li>
+          <li>HTML5 & CSS3 デザインブック <br>( ソシム株式会社)</li>
+        </ul>
+        <p class="prog-heading">その他</p>
+        <ul class="prog-list">
+          <li>当サイト作成</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="certifications">
+    <h2 class="heading">Certification</h2>
+    <div class="certifications-wrapper">
+      <div class="certification-box">
+        <i class="certification-icon fa fa-code" aria-hidden="true"></i>
+        <div class="certification-title">情報系</div>
+        <p class="certification-text">
+          基本情報技術者<br>
+          応用情報技術者
+        </p>
+      </div>
+      <div class="certification-box">
+        <i class="certification-icon fa fa-pencil" aria-hidden="true"></i>
+        <div class="certification-title">情報系以外</div>
+        <p class="certification-text">
+          TOEIC 805点取得<br>
+          英検 準2級<br>
+          日商簿記 2級<br>
+          普通自動車免許
+        </p>
+      </div>
+      <div class="certification-box">
+        <i class="certification-icon fa fa-coffee"></i>
+        <div class="certification-title">趣味</div>
+        <p class="certification-text">
+          全珠連 珠算検定 初段<br>
+          全珠連 暗算検定 初段<br>
+          世界遺産検定 2級<br>
+          PADI オープンウォーターダイバー<br>
+          PADI アドバンスオープンウォーターダイバー<br>
+          他、載せるのも恥ずかしい資格多数...
+        </p>
+      </div>
+    </div>
+  </section>
+  <section class="travels">
+    <h2 class="heading">Travel</h2>
+    <div class="travels-wrapper">
+      <div class="travel-box australia">
+        <img class="travel-image" src="images/m-au.jpeg" alt="制作事例1">
+        <div class="travel-description">
+          <div class="travel-description-inner">
+            <p class="travel-text">
               初海外旅行のオーストラリア<br>
               有名な海はさることながら<br>
               大量の野生ペリカンに感激<br>
@@ -49,11 +148,11 @@
           </div>
         </div>
       </div>
-      <div class="work-box italy">
-        <img class="work-image" src="images/m-it.jpeg" alt="制作事例1">
-        <div class="work-description">
-          <div class="work-description-inner">
-            <p class="work-text">
+      <div class="travel-box italy">
+        <img class="travel-image" src="images/m-it.jpeg" alt="制作事例1">
+        <div class="travel-description">
+          <div class="travel-description-inner">
+            <p class="travel-text">
               イタリア ミラノのドゥオモ<br>
               イタリアは至るところにドゥオモがあるが<br>
               一つ一つ形が違っていて面白い<br>
@@ -62,11 +161,11 @@
           </div>
         </div>
       </div>
-      <div class="work-box greece">
-        <img class="work-image" src="images/m-gr.jpeg" alt="制作事例1">
-        <div class="work-description">
-          <div class="work-description-inner">
-            <p class="work-text">
+      <div class="travel-box greece">
+        <img class="travel-image" src="images/m-gr.jpeg" alt="制作事例1">
+        <div class="travel-description">
+          <div class="travel-description-inner">
+            <p class="travel-text">
               言わずとしれたギリシャのパルテノン神殿<br>
               想像以上に工事中感満載<br>
               朝一で行ったこともあり世界的名所をガラガラが状態<br>
@@ -75,11 +174,11 @@
           </div>
         </div>
       </div>
-      <div class="work-box egypt">
-        <img class="work-image" src="images/m-eg.jpeg" alt="制作事例1">
-        <div class="work-description">
-          <div class="work-description-inner">
-            <p class="work-text">
+      <div class="travel-box egypt">
+        <img class="travel-image" src="images/m-eg.jpeg" alt="制作事例1">
+        <div class="travel-description">
+          <div class="travel-description-inner">
+            <p class="travel-text">
               知らない人はいない　エジプトのピラミッド<br>
               小学生みたいな感想だがとにかくデカイ<br>
               なんやかんやで楽しかった<br>
@@ -90,53 +189,12 @@
       </div>
     </div>
   </section>
-  <section class="skills">
-    <h2 class="heading">MY SKILLS</h2>
-    <div class="skills-wrapper">
-      <div class="skill-box">
-        <i class="skill-icon fa fa-lightbulb-o"></i>
-        <div class="skill-title">学習中</div>
-        <p class="skill-text">
-          WEB系言語を中心に学習中<br>
-          HTML / CSS / JavaScript<br>
-          の基礎はある程度理解した。<br>
-          これからはいくつかページを作って<br>
-          実践練習の予定
-        </p>
-      </div>
-      <div class="skill-box">
-        <i class="skill-icon fa fa-paint-brush"></i>
-        <div class="skill-title">保有資格</div>
-        <p class="skill-text">
-          世界遺産検定2級<br>
-          珠算検定準初段<br>
-          暗算検定初段<br>
-          オープンウォーターダイバー<br>
-          アドバンスオープンウォーターダイバー<br>
-          簿記２級<br>
-          etc...
-        </p>
-      </div>
-      <div class="skill-box">
-        <i class="skill-icon fa fa-coffee"></i>
-        <div class="skill-title">趣味</div>
-        <p class="skill-text">
-          旅行<br>
-          マラソン<br>
-          &lt;new&gt;プログラミング<br>
-          &lt;new&gt;ダイビング<br>
-          etc...
-        </p>
-      </div>
-    </div>
-  </section>
   <section class="contact" id="contact">
-    <h2 class="heading">CONTACT</h2>
-    <form class="contact-form">
-      <input type="text" name="name" placeholder="NAME">
-      <textarea name="message" placeholder="MESSAGE"></textarea>
-      <input type="submit" value="SEND">
-    </form>
+    <h2 class="heading">Contact</h2>
+    <div class="contact">
+      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScNVXJL58xj5JvBhXmRP2IQvzGPtMruCV2PTa9PiPIhz2b95g/viewform?embedded=true" width="100%" height="709" frameborder="0" marginheight="0" marginwidth="0">読み込んでいます…
+      </iframe>
+    </div>
   </section>
   <footer class="footer">
     © KONI
